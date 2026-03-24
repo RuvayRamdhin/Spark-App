@@ -59,6 +59,12 @@ class MainActivity : AppCompatActivity() {
                 tvResult.text = night
             }
 
+            //This is when the user does not enter the correct input
+            //This is an Error check
+            else{
+                tvResult.text = "Please enter the correct input"
+            }
+
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
