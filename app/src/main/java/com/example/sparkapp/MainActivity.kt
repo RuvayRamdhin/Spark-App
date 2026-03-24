@@ -47,20 +47,24 @@ class MainActivity : AppCompatActivity() {
             //if the user inputs anytime of the day it will show them the response
             if(edtSparkOption.text.toString() == "morning"){
                 tvResult.text = morning
-            } else if(edtSparkOption.text.toString() == "midmorning" ||
+            }
+            else if(edtSparkOption.text.toString() == "midmorning" ||
                 edtSparkOption.text.toString() == "mid-morning"){
                 tvResult.text = midmorning
-            } else if(edtSparkOption.text.toString() == "afternoon"){
+            }
+            else if(edtSparkOption.text.toString() == "afternoon"){
                 tvResult.text = afternoon
-            } else if(edtSparkOption.text.toString() == "afternoon snack time"){
+            }
+            else if(edtSparkOption.text.toString() == "afternoon snack time"){
                 tvResult.text = afternoonSnackTime
-            } else if(edtSparkOption.text.toString() == "dinner"){
+            }
+            else if(edtSparkOption.text.toString() == "dinner"){
                 tvResult.text = dinner
-            } else if(edtSparkOption.text.toString() == "night" ||
+            }
+            else if(edtSparkOption.text.toString() == "night" ||
                 edtSparkOption.text.toString() == "after dinner"){
                 tvResult.text = night
             }
-
             //This is when the user does not enter the correct input
             //This is an Error check
             else{
@@ -68,6 +72,11 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+        //This will clear the screen
+        btnReset.setOnClickListener {
+            tvResult.text = " "//By adding " " you are clearing the output from the screen
+        }
+       
 
 
 
