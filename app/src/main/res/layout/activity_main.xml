@@ -41,7 +41,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/spark"
+        android:text="@string/social_spark"
         android:textColor="#F44336"
         android:gravity="center"
         android:textSize="30sp"
