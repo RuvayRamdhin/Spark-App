@@ -43,17 +43,21 @@ class MainActivity : AppCompatActivity() {
         val night = "Leave a thoughtful comment on a friend's post."
 
         btnCheckSpark.setOnClickListener {
-            
-
-
-
-
-
-
-
-
-
-
+            //IF statements will go here.
+            //if the user inputs anytime of the day it will show them the response
+            if(edtSparkOption.text.toString() == "morning"){
+                tvResult.text = morning
+            } else if(edtSparkOption.text.toString() == "midmorning"){
+                tvResult.text = midmorning
+            } else if(edtSparkOption.text.toString() == "afternoon"){
+                tvResult.text = afternoon
+            } else if(edtSparkOption.text.toString() == "afternoon Snack time"){
+                tvResult.text = afternoonSnackTime
+            } else if(edtSparkOption.text.toString() == "dinner"){
+                tvResult.text = dinner
+            } else if(edtSparkOption.text.toString() == "night"){
+                tvResult.text = night
+            }
 
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
