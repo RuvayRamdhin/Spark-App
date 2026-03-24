@@ -10,6 +10,7 @@ import androidx.appcompat.widget.DialogTitle
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.TextViewCompat
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,24 +46,24 @@ class MainActivity : AppCompatActivity() {
         btnCheckSpark.setOnClickListener {
             //IF statements will go here.
             //if the user inputs anytime of the day it will show them the response
-            if(edtSparkOption.text.toString() == "morning"){
+            if(edtSparkOption.text.toString().lowercase() == "morning"){
                 tvResult.text = morning
             }
-            else if(edtSparkOption.text.toString() == "midmorning" ||
-                edtSparkOption.text.toString() == "mid-morning"){
+            else if(edtSparkOption.text.toString().lowercase() == "midmorning" ||
+                edtSparkOption.text.toString().lowercase() == "mid-morning"){
                 tvResult.text = midmorning
             }
-            else if(edtSparkOption.text.toString() == "afternoon"){
+            else if(edtSparkOption.text.toString().lowercase() == "afternoon"){
                 tvResult.text = afternoon
             }
-            else if(edtSparkOption.text.toString() == "afternoon snack time"){
+            else if(edtSparkOption.text.toString().lowercase() == "afternoon snack time"){
                 tvResult.text = afternoonSnackTime
             }
-            else if(edtSparkOption.text.toString() == "dinner"){
+            else if(edtSparkOption.text.toString().lowercase() == "dinner"){
                 tvResult.text = dinner
             }
-            else if(edtSparkOption.text.toString() == "night" ||
-                edtSparkOption.text.toString() == "after dinner"){
+            else if(edtSparkOption.text.toString().lowercase() == "night" ||
+                edtSparkOption.text.toString().lowercase() == "after dinner"){
                 tvResult.text = night
             }
             //This is when the user does not enter the correct input
@@ -76,7 +77,11 @@ class MainActivity : AppCompatActivity() {
         btnReset.setOnClickListener {
             tvResult.text = " "//By adding " " you are clearing the output from the screen
         }
-       
+        //This button is to show the user what inputs they can put in
+        //It gives them less room for errors
+        btnOptions.setOnClickListener {
+            tvResult.text = "Options for time of day: morning, mid-morning, afternoon, afternonn snack time, dinner, night/after dinner"
+        }
 
 
 
