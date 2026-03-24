@@ -34,7 +34,15 @@ class MainActivity : AppCompatActivity() {
         btnReset = findViewById(R.id.btnReset)
         btnOptions = findViewById(R.id.btnOptions)
 
+        //Predefining each spark that is going to used
+        val morning = "Send a 'Good morning' text to a family member."
+        val midmorning = "Reach out to a colleague with a quick 'Thank you'."
+        val afternoon = "Share a funny meme or interesting link with a friend."
+        val afternoonSnackTime = "Send a quick 'thinking of you' message."
+        val dinner = "Call a friend or relative for a 5-minute catch-up."
+        val night = "Leave a thoughtful comment on a friend's post."
 
+        
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
