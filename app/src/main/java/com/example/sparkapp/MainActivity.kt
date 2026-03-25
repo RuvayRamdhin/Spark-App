@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnCheckSpark: Button
     private lateinit var btnReset: Button
     private lateinit var btnOptions: Button
-    
+
     private lateinit var tvOption: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         btnCheckSpark = findViewById(R.id.btnCheckSpark)
         btnReset = findViewById(R.id.btnReset)
         btnOptions = findViewById(R.id.btnOptions)
+        tvOption = findViewById(R.id.tvOptions)
 
         //Predefining each spark that is going to used
         val morning = "Send a 'Good morning' text to a family member."
