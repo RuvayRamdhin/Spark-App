@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
         //This will clear the screen
         btnReset.setOnClickListener {
             tvResult.text = " "//By adding " " you are clearing the output from the screen
-            
+
         }
         //This button is to show the user what inputs they can put in
         //It gives them less room for errors
