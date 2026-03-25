@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnCheckSpark: Button
     private lateinit var btnReset: Button
     private lateinit var btnOptions: Button
+    
+    private lateinit var tvOption: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
