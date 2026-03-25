@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
             //This is when the user does not enter the correct input
             //This is an Error check
             else{
-                tvResult.text = "Please enter the correct input"
+                tvResult.text = "Invalid input"
             }
 
         }
